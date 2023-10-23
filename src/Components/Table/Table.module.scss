@@ -1,0 +1,91 @@
+.table {
+  margin-left: 15%;
+  margin-top: 10%;
+  max-width: 80%;
+
+  &__caretIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  & th {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  & tbody td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    border: none;
+  }
+
+  & tbody tr {
+    background: #f9f9f9;
+
+    & td:first-child {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__categoryTh {
+    display: flex;
+  }
+
+  &__hrLine {
+    max-width: 1238px;
+    height: 2px;
+    background: #171717;
+  }
+}
+
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+    .ant-pagination {
+      .ant-pagination-item {
+        border: 1px solid #d9d9d9;
+        margin: 0 4px;
+        border-radius: 4px;
+        &:hover {
+          border-color: #1890ff;
+        }
+      }
+  
+      .ant-pagination-item-active {
+        background-color: #1890ff;
+        border-color: #1890ff;
+        a {
+          color: #fff;
+        }
+      }
+  
+      .ant-pagination-prev, .ant-pagination-next {
+        border-radius: 4px;
+        &:hover {
+          border-color: #1890ff;
+        }
+      }
+  
+      .ant-pagination-prev-icon, .ant-pagination-next-icon {
+        color: #171717;
+        
+      }
+  
+      .ant-pagination-prev:hover .ant-pagination-item-link, 
+      .ant-pagination-next:hover .ant-pagination-item-link {
+        color: #1890ff;
+      }
+    }
+  }
+
+  
+  
+  
+  
+  
+  
