@@ -1,0 +1,49 @@
+.auth {
+  font-family: Nunito;
+  background-image: url(../../Assets/background.png);
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .block {
+    background-color: #fff;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    & h1 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    & .textInput,
+    .passwordInput,
+    Button {
+      width: 90%;
+      height: 15%;
+    }
+
+    & .textInput,
+    .passwordInput {
+      font-size: 18px;
+      
+    }
+
+    & Button {
+      background-color: #00315d;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}

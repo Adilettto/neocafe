@@ -5,7 +5,7 @@ import {
   LeftOutlined,
   RightOutlined,
 } from "@ant-design/icons";
-import dotsIcon from "../../Assets/admin/admin/DotsThreeVertical.svg"
+import dotsIcon from "../../Assets/DotsThreeVertical.svg"
 
 const staticData = [
   {
