@@ -1,6 +1,7 @@
 .table {
   margin-left: 15%;
-  margin-top: 10%;
+  font-family: Nunito;
+  margin-top: 1%;
   max-width: 80%;
 
   &__caretIcon {
@@ -10,14 +11,16 @@
 
   & th {
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-align: left;
   }
 
   & tbody td {
+    padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 18px;
+    font-weight: 600;
     border: none;
   }
 
@@ -30,8 +33,20 @@
     }
   }
 
+  &__branch {
+    display: flex;
+    margin-top: 10px;
+    gap: 30px;
+  }
+
   &__categoryTh {
     display: flex;
+    gap: 5px;
+    padding-top: 10px;
+  }
+
+  &__caretDown {
+    margin-top: 3px;
   }
 
   &__hrLine {
@@ -42,50 +57,33 @@
 }
 
 .paginationContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  
-    .ant-pagination {
-      .ant-pagination-item {
-        border: 1px solid #d9d9d9;
-        margin: 0 4px;
-        border-radius: 4px;
-        &:hover {
-          border-color: #1890ff;
-        }
-      }
-  
-      .ant-pagination-item-active {
-        background-color: #1890ff;
-        border-color: #1890ff;
-        a {
-          color: #fff;
-        }
-      }
-  
-      .ant-pagination-prev, .ant-pagination-next {
-        border-radius: 4px;
-        &:hover {
-          border-color: #1890ff;
-        }
-      }
-  
-      .ant-pagination-prev-icon, .ant-pagination-next-icon {
-        color: #171717;
-        
-      }
-  
-      .ant-pagination-prev:hover .ant-pagination-item-link, 
-      .ant-pagination-next:hover .ant-pagination-item-link {
-        color: #1890ff;
-      }
-    }
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  & button {
+    width: 37px;
+    height: 36px;
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
   }
 
-  
-  
-  
-  
-  
-  
+  & .activeNum {
+    border-bottom: 1px solid #000;
+    padding-top: 2px;
+  }
+
+  & .rightBtn {
+    border-left: 1px solid #d8d8d8;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  & .leftBtn {
+    border-right: 1px solid #d8d8d8;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
